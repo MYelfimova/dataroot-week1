@@ -120,13 +120,19 @@ div.aboutus-text{
     width: 438px;
 }
 div.aboutus-text>h6{
+    position: relative;
+    left: 2px;
+    
     font-family: Gothemrounded-book;
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 4px;
     color: #149f85;
 }
-div.aboutus-text pre{
+div.aboutus-text pre span#txt{
+    position: relative;
+    left: 1px;
+    top: 4px;
     margin-top: 3px;
     font-size: 12px;
     letter-spacing: 1.85px;
@@ -135,7 +141,9 @@ div.aboutus-text pre{
     line-height: 24px;
 }
 div.aboutus-text>button{
-    margin-top: 32px;
+    position: relative;
+    top: 2px;
+    top: 28px;
     width: 192px;
     height: 52px;
     background-color:#149f85;
@@ -147,7 +155,11 @@ div.aboutus-text>button{
     text-transform: uppercase;
     letter-spacing: 1.8px;
     cursor: pointer;
-    
+}
+div.aboutus-text>button.cta>span{
+    position: relative;
+    top: 2px;
+    left:1px;
 }
 
 /*DESIGN BLOCK*/
@@ -167,6 +179,7 @@ div.design-text{
 div.design-text>h6{
     position: relative;
     left: 2px;
+    top: 2px;
     font-family: Gothemrounded-book;
     text-transform: uppercase;
     font-size: 16px;
@@ -174,28 +187,34 @@ div.design-text>h6{
     color: #149f85;
 }
 div.design-text pre{
+    position: relative;
+    top: 1px;
+    left: 5px;
     font-size: 12px;
-    margin-top: 0px;
-    margin-left: 1px;
     letter-spacing: 1.9px;
     font-family: Gothemrounded-light;
     color: black;    
     line-height: 22px;
 }
 div.design-text>button{
-    margin-top: 28px;
-    margin-left: 2px;
+    position: relative;
+    top:28px;
+    left:4px;
     width: 192px;
     height: 50px;
     background-color:#149f85;
     border-radius: 2px;
-    font-family: Gothemrounded-bold;
-    color: #ddd;
-    font-size: 12px;
     border: none;
     text-transform: uppercase;
     letter-spacing: 1.8px;
     cursor: pointer;
+}
+div.design-text>button>span{
+    position: relative;
+    left: -2px;
+    font-family: Gothemrounded-bold;
+    color: #ddd;
+    font-size: 12px;
 }
 
 div.design-text>div{
@@ -205,6 +224,9 @@ div.design-text>div{
     margin-left: 1px;
 }
 div.design-text span#num{
+    position: relative;
+    top:28px;
+    left: 2px;
     font-size: 12px;
     color: black;
     letter-spacing: 2px;
@@ -212,6 +234,7 @@ div.design-text span#num{
 div.design-text span#arrows{
     display: block;
     position: relative;
+    top: 27px;
     left: 2px;
     color: black;
     font-size: 26px;
@@ -277,14 +300,16 @@ div.pics>img{
     margin-right: 30px;    
 }
 div.inline-img-van{
-    position: absolute;
-    margin-top: 0px;
-    margin-left: 384px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    left:386px;
 }
 div.inline-img-leaf{
-    position: absolute;
-    margin-top: 0px;
-    margin-left: 775px;
+    display: inline-block;
+    position: relative;
+    left:404px;
+    top: 2px;
 }
 
 /*SUBSCRIBE BLOCK*/
@@ -307,7 +332,7 @@ div.inline-img-leaf{
     position: relative;
     display: inline;
     top: 404px;
-    left: 466px;
+    left: 467px;
     width: 310px;
     height: 126px;
     
@@ -322,6 +347,7 @@ div.inline-img-leaf{
     font-family: Gothemrounded-book;
     color: black;
     font-size: 16px;
+    font-weight: 600;
     letter-spacing: 2.2px;
 }
 #subscribe-input>span{
@@ -363,11 +389,12 @@ div.download>h5{
     color: black;
 }
 div.download pre{
-    margin-top: -27px;
+    margin-top: -25px;
     margin-left: 220px;
     font-size: 12px;
     letter-spacing: 1.85px;
     font-family: Gothemrounded-light;
+    font-weight: 700;
     text-transform: uppercase;
     color: black;    
     line-height: 23px;
@@ -400,25 +427,29 @@ div.download pre{
 #apple>span.label-words{
     position: relative;
     left: -20px;
-    top: 9px;
+    top: 9px; 
     letter-spacing: 2.6px;
+    color: white;
 }
 #android>span.label-words{
     position: relative;
     left: -14px;
-    top: 7px;
+    top: 7px; 
     letter-spacing: 4px;
+    color: white;
 }
 #apple>span.btn-label>i{
     position: relative;
     font-size: 26px;
     top: 12px;
+    color: white;
 }
 #android>span.btn-label>i{
     position: relative;
-    font-size: 29px;
+    font-size: 31px;
     top: 10px;
     left: 1px;
+    color: white;
 }
 #apple{
 
@@ -427,7 +458,7 @@ div.download pre{
 }
 #android{
     
-    margin-top: 35px;
+    margin-top: 33px;
     margin-left: 32px;    
 }
 .btn { 
